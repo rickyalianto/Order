@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'OrdersController@index')->name('home');
+Route::get('/display-item', 'OrdersController@index')->name('home');
